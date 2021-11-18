@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.petStore.PetStoreRestApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-18T10:33:31" hostname="damish-HP-Laptop-15-da0xxx" time="1.706">
+  <properties/>
+  <testcase name="testUpdatePetNotValidId()" classname="com.example.petStore.PetStoreRestApplicationTest" time="1.706"/>
+  <system-out><![CDATA[[com.example.petStore.pet.Pet@6eb49169, com.example.petStore.pet.Pet@7715916f, com.example.petStore.pet.Pet@65bc375]
+[com.example.petStore.pet.Pet@6eb49169, com.example.petStore.pet.Pet@7715916f, com.example.petStore.pet.Pet@65bc375]
+]]></system-out>
+  <system-err><![CDATA[Nov 18, 2021 4:03:28 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 3.1.1.Final
+Nov 18, 2021 4:03:30 PM org.jboss.resteasy.core.ResteasyDeploymentImpl processApplication
+INFO: RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.example.petStore.PetStoreRestApplication
+Nov 18, 2021 4:03:30 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 3.1.1.Final
+Nov 18, 2021 4:03:31 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Quarkus 1.7.6.Final on JVM started in 3.099s. Listening on: http://0.0.0.0:8081
+Nov 18, 2021 4:03:31 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Profile test activated. 
+Nov 18, 2021 4:03:31 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Installed features: [cdi, jaeger, mutiny, rest-client, resteasy, resteasy-jsonb, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-opentracing, swagger-ui, vertx, vertx-web]
+]]></system-err>
+</testsuite>
