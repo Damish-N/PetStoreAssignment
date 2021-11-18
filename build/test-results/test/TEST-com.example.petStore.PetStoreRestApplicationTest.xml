@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.petStore.PetStoreRestApplicationTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-11-18T12:56:26" hostname="damish-HP-Laptop-15-da0xxx" time="2.508">
+<testsuite name="com.example.petStore.PetStoreRestApplicationTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-11-18T16:20:17" hostname="damish-HP-Laptop-15-da0xxx" time="1.914">
   <properties/>
-  <testcase name="testSearchPets()" classname="com.example.petStore.PetStoreRestApplicationTest" time="2.206"/>
-  <testcase name="testUpdatePetNotValidId()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.037"/>
-  <testcase name="testUpdatePet()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.047"/>
-  <testcase name="testGetPetType()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.035"/>
+  <testcase name="testSearchPets()" classname="com.example.petStore.PetStoreRestApplicationTest" time="1.605"/>
+  <testcase name="testUpdatePetNotValidId()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.04"/>
+  <testcase name="testUpdatePet()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.05"/>
+  <testcase name="testGetPetType()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.044"/>
   <testcase name="testUpdatePetType()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.014"/>
   <testcase name="testDeletePet()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.016"/>
-  <testcase name="testAddPetType()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.043"/>
-  <testcase name="testPetGetEndpointSuccessWithValues()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.041"/>
-  <testcase name="testDeletePetType()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.01"/>
-  <testcase name="testedAdding()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.04"/>
+  <testcase name="testAddPetType()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.033"/>
+  <testcase name="testPetGetEndpointSuccessWithValues()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.042"/>
+  <testcase name="testDeletePetType()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.009"/>
+  <testcase name="testedAdding()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.044"/>
   <testcase name="testPetGetEndPoint()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.008"/>
   <system-out><![CDATA[Reset the Values
-[com.example.petStore.pet.Pet@e4dc1dd, com.example.petStore.pet.Pet@e694107, com.example.petStore.pet.Pet@2d94880d]
-[com.example.petStore.pet.Pet@6a8cd447, com.example.petStore.pet.Pet@77905365, com.example.petStore.pet.Pet@7279cbe0]
-[com.example.petStore.pet.Pet@6a8cd447, com.example.petStore.pet.Pet@77905365, com.example.petStore.pet.Pet@7279cbe0]
+[com.example.petStore.pet.Pet@59baf36f, com.example.petStore.pet.Pet@6ffd16b1, com.example.petStore.pet.Pet@925ebf6]
+[com.example.petStore.pet.Pet@5c3b4891, com.example.petStore.pet.Pet@127b5593, com.example.petStore.pet.Pet@52a40a0a]
+[com.example.petStore.pet.Pet@5c3b4891, com.example.petStore.pet.Pet@127b5593, com.example.petStore.pet.Pet@52a40a0a]
 Reset the Values
-[com.example.petStore.pet.Pet@6a8cd447, com.example.petStore.pet.Pet@77905365, com.example.petStore.pet.Pet@7279cbe0]
+[com.example.petStore.pet.Pet@5c3b4891, com.example.petStore.pet.Pet@127b5593, com.example.petStore.pet.Pet@52a40a0a]
 Reset the Values
-[com.example.petStore.pet.Pet@440a7ebf, com.example.petStore.pet.Pet@7a8a62c6, com.example.petStore.pet.Pet@5b6652ef]
+[com.example.petStore.pet.Pet@1f096838, com.example.petStore.pet.Pet@29be9be9, com.example.petStore.pet.Pet@24c01915]
 Reset the Values
-[com.example.petStore.pet.Pet@1d77c5b8, com.example.petStore.pet.Pet@c101bb3, com.example.petStore.pet.Pet@6c03c4aa]
+[com.example.petStore.pet.Pet@3d57b875, com.example.petStore.pet.Pet@414574a5, com.example.petStore.pet.Pet@3199d9e0]
 Reset the Values
-[com.example.petStore.pet.Pet@458407da, com.example.petStore.pet.Pet@fa00bea, com.example.petStore.pet.Pet@81c9fb5]
+[com.example.petStore.pet.Pet@6a33079f, com.example.petStore.pet.Pet@3741aa5d, com.example.petStore.pet.Pet@4e7b0455]
 Reset the Values
-[com.example.petStore.pet.Pet@731169df, com.example.petStore.pet.Pet@786069a4, com.example.petStore.pet.Pet@4b2b89fa]
+[com.example.petStore.pet.Pet@3a9194f5, com.example.petStore.pet.Pet@61fa37ae, com.example.petStore.pet.Pet@2f9a0e2e]
 Reset the Values
-[com.example.petStore.pet.Pet@3364e59a, com.example.petStore.pet.Pet@211c5d7a]
+[com.example.petStore.pet.Pet@396f43ab, com.example.petStore.pet.Pet@33b7e976]
 Reset the Values
-[com.example.petStore.pet.Pet@22f376e1, com.example.petStore.pet.Pet@35325212, com.example.petStore.pet.Pet@5bd4033b]
+[com.example.petStore.pet.Pet@182cbba6, com.example.petStore.pet.Pet@7ad5cff3, com.example.petStore.pet.Pet@7615482d]
 Reset the Values
-[com.example.petStore.pet.Pet@5e06936c, com.example.petStore.pet.Pet@2231e6c0, com.example.petStore.pet.Pet@727dac9e]
+[com.example.petStore.pet.Pet@41c93430, com.example.petStore.pet.Pet@7b94e0c8, com.example.petStore.pet.Pet@4d1d786f]
 Reset the Values
-[com.example.petStore.pet.Pet@1436ae06, com.example.petStore.pet.Pet@6634294b, com.example.petStore.pet.Pet@4d759aaf]
+[com.example.petStore.pet.Pet@2517763f, com.example.petStore.pet.Pet@ed87bb3, com.example.petStore.pet.Pet@13a9eb9]
 15
 Reset the Values
-[com.example.petStore.pet.Pet@5bc47eae, com.example.petStore.pet.Pet@682bf21b, com.example.petStore.pet.Pet@771e0bca, com.example.petStore.pet.Pet@28faa2f8]
+[com.example.petStore.pet.Pet@3eb90f3f, com.example.petStore.pet.Pet@6d6b1d98, com.example.petStore.pet.Pet@1392d9c9, com.example.petStore.pet.Pet@3066c87b]
 ]]></system-out>
-  <system-err><![CDATA[Nov 18, 2021 6:26:23 PM org.jboss.threads.Version <clinit>
+  <system-err><![CDATA[Nov 18, 2021 9:50:15 PM org.jboss.threads.Version <clinit>
 INFO: JBoss Threads version 3.1.1.Final
-Nov 18, 2021 6:26:25 PM org.jboss.resteasy.core.ResteasyDeploymentImpl processApplication
+Nov 18, 2021 9:50:17 PM org.jboss.resteasy.core.ResteasyDeploymentImpl processApplication
 INFO: RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.example.petStore.PetStoreRestApplication
-Nov 18, 2021 6:26:25 PM org.jboss.threads.Version <clinit>
+Nov 18, 2021 9:50:17 PM org.jboss.threads.Version <clinit>
 INFO: JBoss Threads version 3.1.1.Final
-Nov 18, 2021 6:26:26 PM io.quarkus.bootstrap.runner.Timing printStartupTime
-INFO: Quarkus 1.7.6.Final on JVM started in 3.770s. Listening on: http://0.0.0.0:8081
-Nov 18, 2021 6:26:26 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+Nov 18, 2021 9:50:17 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Quarkus 1.7.6.Final on JVM started in 2.425s. Listening on: http://0.0.0.0:8081
+Nov 18, 2021 9:50:17 PM io.quarkus.bootstrap.runner.Timing printStartupTime
 INFO: Profile test activated. 
-Nov 18, 2021 6:26:26 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+Nov 18, 2021 9:50:17 PM io.quarkus.bootstrap.runner.Timing printStartupTime
 INFO: Installed features: [cdi, jaeger, mutiny, rest-client, resteasy, resteasy-jsonb, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-opentracing, swagger-ui, vertx, vertx-web]
 ]]></system-err>
 </testsuite>
