@@ -1,26 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.petStore.PetStoreRestApplicationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-11-18T11:19:00" hostname="damish-HP-Laptop-15-da0xxx" time="1.74">
+<testsuite name="com.example.petStore.PetStoreRestApplicationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-11-18T12:04:22" hostname="damish-HP-Laptop-15-da0xxx" time="1.915">
   <properties/>
-  <testcase name="testUpdatePetNotValidId()" classname="com.example.petStore.PetStoreRestApplicationTest" time="1.207"/>
-  <testcase name="testUpdatePet()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.408"/>
-  <testcase name="testDeletePet()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.031"/>
-  <testcase name="testedAdding()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.073"/>
-  <testcase name="testPetGetEndPoint()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.017"/>
-  <system-out><![CDATA[[com.example.petStore.pet.Pet@789f7852, com.example.petStore.pet.Pet@75473794, com.example.petStore.pet.Pet@3ccc599e]
-[com.example.petStore.pet.Pet@789f7852, com.example.petStore.pet.Pet@75473794, com.example.petStore.pet.Pet@3ccc599e]
+  <testcase name="testSearchPets()" classname="com.example.petStore.PetStoreRestApplicationTest" time="1.698"/>
+  <testcase name="testUpdatePetNotValidId()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.046"/>
+  <testcase name="testUpdatePet()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.047"/>
+  <testcase name="testDeletePet()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.017"/>
+  <testcase name="testPetGetEndpointSuccessWithValues()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.041"/>
+  <testcase name="testedAdding()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.051"/>
+  <testcase name="testPetGetEndPoint()" classname="com.example.petStore.PetStoreRestApplicationTest" time="0.009"/>
+  <system-out><![CDATA[Reset the Values
+[com.example.petStore.pet.Pet@4d482528, com.example.petStore.pet.Pet@6d94b3c6, com.example.petStore.pet.Pet@13a7b0eb]
+[com.example.petStore.pet.Pet@5f9e439a, com.example.petStore.pet.Pet@b69352f, com.example.petStore.pet.Pet@6a05950c]
+[com.example.petStore.pet.Pet@5f9e439a, com.example.petStore.pet.Pet@b69352f, com.example.petStore.pet.Pet@6a05950c]
+Reset the Values
+[com.example.petStore.pet.Pet@5f9e439a, com.example.petStore.pet.Pet@b69352f, com.example.petStore.pet.Pet@6a05950c]
+Reset the Values
+[com.example.petStore.pet.Pet@48051e87, com.example.petStore.pet.Pet@d424834, com.example.petStore.pet.Pet@379c98ec]
+Reset the Values
+[com.example.petStore.pet.Pet@5158d820, com.example.petStore.pet.Pet@191f68c, com.example.petStore.pet.Pet@22fd5583]
+Reset the Values
+[com.example.petStore.pet.Pet@3c37ee3c, com.example.petStore.pet.Pet@523f463e]
+Reset the Values
+[com.example.petStore.pet.Pet@6e4dd0ad, com.example.petStore.pet.Pet@7b085e0, com.example.petStore.pet.Pet@6b8077f4]
 15
+Reset the Values
+[com.example.petStore.pet.Pet@1d1b064f, com.example.petStore.pet.Pet@2532f52e, com.example.petStore.pet.Pet@230d3882, com.example.petStore.pet.Pet@655dac6f]
 ]]></system-out>
-  <system-err><![CDATA[Nov 18, 2021 4:48:58 PM org.jboss.threads.Version <clinit>
+  <system-err><![CDATA[Nov 18, 2021 5:34:20 PM org.jboss.threads.Version <clinit>
 INFO: JBoss Threads version 3.1.1.Final
-Nov 18, 2021 4:49:00 PM org.jboss.resteasy.core.ResteasyDeploymentImpl processApplication
+Nov 18, 2021 5:34:22 PM org.jboss.resteasy.core.ResteasyDeploymentImpl processApplication
 INFO: RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.example.petStore.PetStoreRestApplication
-Nov 18, 2021 4:49:00 PM org.jboss.threads.Version <clinit>
+Nov 18, 2021 5:34:22 PM org.jboss.threads.Version <clinit>
 INFO: JBoss Threads version 3.1.1.Final
-Nov 18, 2021 4:49:00 PM io.quarkus.bootstrap.runner.Timing printStartupTime
-INFO: Quarkus 1.7.6.Final on JVM started in 2.058s. Listening on: http://0.0.0.0:8081
-Nov 18, 2021 4:49:00 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+Nov 18, 2021 5:34:22 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Quarkus 1.7.6.Final on JVM started in 2.965s. Listening on: http://0.0.0.0:8081
+Nov 18, 2021 5:34:22 PM io.quarkus.bootstrap.runner.Timing printStartupTime
 INFO: Profile test activated. 
-Nov 18, 2021 4:49:00 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+Nov 18, 2021 5:34:22 PM io.quarkus.bootstrap.runner.Timing printStartupTime
 INFO: Installed features: [cdi, jaeger, mutiny, rest-client, resteasy, resteasy-jsonb, security, smallrye-context-propagation, smallrye-fault-tolerance, smallrye-health, smallrye-jwt, smallrye-metrics, smallrye-openapi, smallrye-opentracing, swagger-ui, vertx, vertx-web]
 ]]></system-err>
 </testsuite>
