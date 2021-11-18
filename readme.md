@@ -82,3 +82,21 @@ Exposes the information about your endpoints in the format of the OpenAPI v3 spe
 
 The index page contains a link to the OpenAPI information of your endpoints.
 
+### to build the API and deploy
+
+Run the following commands and up the swagger and refer the End points
+
+##### step 1:
+run on the terminal
+
+    ./gradlew build -Dquarkus.package.type=uber-jar
+
+##### step 2
+run on the terminal
+
+    java -jar build/petStore-runner.jar
+
+##### step 3
+to find the End-points
+
+    http://localhost:8080/swagger-ui/
