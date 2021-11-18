@@ -7,3 +7,4 @@ com/example/petStore/PetStoreRestApplicationTest.java
  com.example.petStore.PetStoreRestApplicationTest$5
  com.example.petStore.PetStoreRestApplicationTest$6
  com.example.petStore.PetStoreRestApplicationTest$7
+ com.example.petStore.PetStoreRestApplicationTest$8

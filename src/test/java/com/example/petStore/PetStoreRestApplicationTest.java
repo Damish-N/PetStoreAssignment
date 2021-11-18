@@ -182,16 +182,96 @@ class PetStoreRestApplicationTest
     void testSearchPets()
     {
         given().header( "Content-Type", "application/json" )
-               .queryParam( "age", "5")
+               .queryParam( "age", "5" )
                .when().get( "/pets/search" )
                .then()
                .assertThat()
                .statusCode( 200 )
                .body( "petId", notNullValue() )
-               .body( "petAge", equalTo( new ArrayList(){{add( 5 );}} ) )
-               .body( "petName", equalTo( new ArrayList(){{add( "boola" );}} ) )
-               .body( "petType", equalTo( new ArrayList(){{add( "dog" );}} ) );
+               .body( "petAge", equalTo( new ArrayList()
+               {{
+                   add( 5 );
+               }} ) )
+               .body( "petName", equalTo( new ArrayList()
+               {{
+                   add( "boola" );
+               }} ) )
+               .body( "petType", equalTo( new ArrayList()
+               {{
+                   add( "dog" );
+               }} ) );
         ;
+    }
+
+
+/////////////////////////////////    Pet Type testCases   ///////////////////////////////////////////
+
+
+    @Test
+    void testGetPetType()
+    {
+        given()
+                .when().get( "/petTypes" )
+                .then()
+                .assertThat()
+                .statusCode( 200 )
+                .body( "petType", equalTo( new ArrayList()
+                {{
+                    add( "dog" );
+                    add( "cat" );
+                    add( "bird" );
+                }} ) );
+
+    }
+
+    @Test
+    void testAddPetType()
+    {
+        given()
+                .header( "Content-Type", "application/json" )
+                .body( "{\n" +
+                               "  \"petId\": 4,\n" +
+                               "  \"petType\": \"rat\"\n" +
+                               "}" )
+                .when().post( "/petTypes" )
+                .then()
+                .assertThat()
+                .statusCode( 200 )
+                .body( "petId", notNullValue() )
+                .body( "petType", equalTo( "rat" ) );
+
+    }
+
+    @Test
+    void testUpdatePetType()
+    {
+        given()
+                .header( "Content-Type", "application/json" )
+                .pathParam( "id", 3 )
+                .body( "{\n" +
+                               "  \"petId\": 0,\n" +
+                               "  \"petType\": \"cats\"\n" +
+                               "}" )
+                .when().put( "/petTypes/{id}" )
+                .then()
+                .assertThat()
+                .statusCode( 200 );
+
+    }
+
+    @Test
+    public void testDeletePetType()
+    {
+
+        given()
+                .header( "Content-Type", "application/json" )
+                .pathParam( "id", 1 )
+                .when().delete( "/petTypes/{id}" )
+                .then()
+                .assertThat()
+                .statusCode( 200 );
+
+
     }
 
 
