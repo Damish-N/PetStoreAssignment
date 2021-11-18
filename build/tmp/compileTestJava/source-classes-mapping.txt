@@ -1,8 +1,2 @@
 com/example/petStore/PetStoreRestApplicationTest.java
  com.example.petStore.PetStoreRestApplicationTest
- com.example.petStore.PetStoreRestApplicationTest$1
- com.example.petStore.PetStoreRestApplicationTest$2
- com.example.petStore.PetStoreRestApplicationTest$3
- com.example.petStore.PetStoreRestApplicationTest$4
- com.example.petStore.PetStoreRestApplicationTest$5
- com.example.petStore.PetStoreRestApplicationTest$6

@@ -5,6 +5,7 @@ import com.example.petStore.pet.Pet;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.response.ValidatableResponse;
 import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -25,43 +26,50 @@ import static org.junit.jupiter.api.Assertions.*;
 class PetStoreRestApplicationTest
 {
 
+
     @Test
+    @Order( 0 )
     public void testPetGetEndPoint()
     {
         given().when().get( "/pets" ).then().statusCode( 200 );
     }
 
-    @Test
-    void testPetGetEndpointSuccessWithValues()
-    {
-        given()
-                .when().get("/pets")
-                .then()
-                .assertThat()
-                .statusCode( 200 )
-                .body( "petId",notNullValue() )
-                .body( "petAge",equalTo( new ArrayList(){{add( 5 );add( 2 );add( 2 );}} ) )
-                .body( "petName",equalTo( new ArrayList(){{add( "boola" );add( "boola" );add( "peththa" );}} ) )
-                .body( "petType",equalTo( new ArrayList(){{add( "dog" );add( "cat" );add( "bird" );}} ) );
 
-    }
-    @Test
-    void testPetGetEndpointUnSuccessWithValues()
-    {
-        given()
-                .when().get("/pets")
-                .then()
-                .assertThat()
-                .statusCode( 200 )
-                .body( "petId",notNullValue() )
-                .body( "petAge",equalTo( new ArrayList(){{add( 5 );add( 2 );add( 2 );}} ) )
-                .body( "petName",equalTo( new ArrayList(){{add( "boola" );add( "boola" );add( "peththa" );}} ) )
-                .body( "petType",equalTo( new ArrayList(){{add( "dog" );add( "cat2" );add( "bird" );}} ) ); //change the value of cat type
+//    @Test
+//    @Order( 1 )
+//    void testPetGetEndpointSuccessWithValues()
+//    {
+//        given()
+//                .when().get("/pets")
+//                .then()
+//                .assertThat()
+//                .statusCode( 200 )
+//                .body( "petId",notNullValue() )
+//                .body( "petAge",equalTo( new ArrayList(){{add( 5 );add( 2 );add( 2 );}} ) )
+//                .body( "petName",equalTo( new ArrayList(){{add( "boola" );add( "boola" );add( "peththa" );}} ) )
+//                .body( "petType",equalTo( new ArrayList(){{add( "dog" );add( "cat" );add( "bird" );}} ) );
+//
+//    }
 
-    }
+//    @Test
+//    void testPetGetEndpointUnSuccessWithValues()
+//    {
+//        given()
+//                .when().get("/pets")
+//                .then()
+//                .assertThat()
+//                .statusCode( 200 )
+//                .body( "petId",notNullValue() )
+//                .body( "petAge",equalTo( new ArrayList(){{add( 5 );add( 2 );add( 2 );}} ) )
+//                .body( "petName",equalTo( new ArrayList(){{add( "boola" );add( "boola" );add( "peththa" );}} ) )
+//                .body( "petType",equalTo( new ArrayList(){{add( "dog" );add( "cat" );add( "bird" );}} ) ); //change the value of cat type
+//
+//    }
+
 
     @Test
-    public void testedAPetSuccess(){
+    @Order( 2 )
+    public void testedAdding(){
         given()
                 .header( "Content-Type",  "application/json" )
                 .body( "{\n" +
@@ -80,6 +88,7 @@ class PetStoreRestApplicationTest
 
     }
     @Test
+    @Order( 2 )
     void testUpdatePet(){
         given()
                 .header( "Content-Type",  "application/json" )
@@ -99,11 +108,13 @@ class PetStoreRestApplicationTest
                 .body( "petType",equalTo( "Dog" ) );
 
     }
+
     @Test
+    @Order( 3 )
     void testUpdatePetNotValidId(){
         given()
                 .header( "Content-Type",  "application/json" )
-                .pathParam( "id",4 )
+                .pathParam( "id",6 )
                 .body( "{\n" +
                                "\t\"petType\":\"Dog\",\n" +
                                "\t\"petName\":\"Rox\",\n" +
@@ -116,7 +127,9 @@ class PetStoreRestApplicationTest
 
     }
 
+
     @Test
+    @Order( 4 )
     void testDeletePet(){
         given()
                 .header( "Content-Type",  "application/json" )
