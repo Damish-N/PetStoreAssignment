@@ -8,12 +8,12 @@
 Run the following commands and up the swagger and refer the End points
 
 ##### step 1:
-run the command on terminal(root level of project)
+run the command on terminal
 
     ./gradlew build -Dquarkus.package.type=uber-jar
 
 ##### step 2
-run the command on terminal (root level of project)
+run the command on terminal 
 
     java -jar build/petStore-runner.jar
 
@@ -23,7 +23,7 @@ to find the End-points on here
     http://localhost:8080/swagger-ui/
 
 ## Run Test Suite
-run the command on terminal (root level of project)
+run the command on terminal
 
     ./gradlew test
 
@@ -75,7 +75,7 @@ Delete an existing  pet type
 
 ### Open Swagger
 
-To launch API doc Run the project and route with below url
+###### To launch API Doc,Run the project and route with below url
 
      http://localhost:8080/swagger-ui/
 
